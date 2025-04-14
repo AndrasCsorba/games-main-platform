@@ -24,3 +24,14 @@
   },
   "include": ["src"]
 }
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc/app",
+    "rootDir": "./src",
+    "composite": true,
+    "declaration": true,
+    "declarationDir": "./dist/out-tsc/app"
+  },
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
+}
