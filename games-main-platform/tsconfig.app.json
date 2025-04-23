@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
@@ -20,18 +21,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
-  },
-  "include": ["src"]
-}
-{
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
+    "noUncheckedSideEffectImports": true,
+
+    /* Output settings */
     "outDir": "./dist/out-tsc/app",
     "rootDir": "./src",
     "composite": true,
     "declaration": true,
     "declarationDir": "./dist/out-tsc/app"
   },
+  "include": ["src"],
   "exclude": ["**/*.spec.ts", "**/*.test.ts"]
 }
